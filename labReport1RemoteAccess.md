@@ -5,7 +5,7 @@ Goal: logging into a course-specific account on *ieng6*
 1. Download Visual Studio Code through https://code.visualstudio.com/
    * Follow instructions on the website to download properly.
 3. Once downloaded, the starting screen should look similar to this:
-   ![Image](https://github.com/osheentikku/cse15l-lab-reports/blob/main/VSCodeStartScreen.png)
+   ![Image](cse15l-lab-reports/blob/main/VSCodeStartScreen.png)
 
 ## Step 2: Remotely Connecting
 1. Install git through https://git-scm.com/downloads
@@ -18,7 +18,7 @@ Goal: logging into a course-specific account on *ieng6*
    * instead of zzz, type in the letters from the given course specific account
 4. If it's the first time signing in, there will be a message asking if you're sure you want to continue connecting. Type yes and hit enter.
 5. Enter your password and the following message should show up.
-   ![Image](https://github.com/osheentikku/cse15l-lab-reports/blob/main/RemoteServerConnection.png)
+   ![Image](cse15l-lab-reports/main/RemoteServerConnection.png)
 
 ## Step 3: Using commands
 1. Here are some common commands to use:
@@ -28,7 +28,7 @@ Goal: logging into a course-specific account on *ieng6*
    * mkdir - make new directory
    * cp - copy
 2. Here is an example combination of commands.
-   ![Image](https://github.com/osheentikku/cse15l-lab-reports/blob/main/ExampleCommands.png)
+   ![Image](cse15l-lab-reports/blob/main/ExampleCommands.png)
 3. To exit the remote server, type ```exit``` in the terminal.
 
 
