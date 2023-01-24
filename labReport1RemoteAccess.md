@@ -23,11 +23,11 @@ Goal: logging into a course-specific account on *ieng6*
 ## Step 3: Using commands
 1. Here are some common commands to use:
    ```
-   * cd - change directory
-   * ls - list
-   * pwd - print working directory
-   * mkdir - make new directory
-   * cp - copy
+   cd - change directory
+   ls - list
+   pwd - print working directory
+   mkdir - make new directory
+   cp - copy
    ```
 2. Here is an example combination of commands.
    ![Image](ExampleCommands.png)
