@@ -2,13 +2,13 @@
 Goal: logging into a course-specific account on *ieng6*
 
 ## Step 1: Installing VScode
-1. Download Visual Studio Code through https://code.visualstudio.com/
+1. Download Visual Studio Code through [here](https://code.visualstudio.com/).
    * Follow instructions on the website to download properly.
 3. Once downloaded, the starting screen should look similar to this:
    ![Image](VSCodeStartScreen.png)
 
 ## Step 2: Remotely Connecting
-1. Install git through https://git-scm.com/downloads
+1. Install git through [here](https://git-scm.com/downloads).
 2. Inside VScode, open a new terminal.
    * Terminal -> New Terminal
 3. Enter: 
@@ -22,11 +22,13 @@ Goal: logging into a course-specific account on *ieng6*
 
 ## Step 3: Using commands
 1. Here are some common commands to use:
+   ```
    * cd - change directory
    * ls - list
    * pwd - print working directory
    * mkdir - make new directory
    * cp - copy
+   ```
 2. Here is an example combination of commands.
    ![Image](ExampleCommands.png)
 3. To exit the remote server, type ```exit``` in the terminal.
