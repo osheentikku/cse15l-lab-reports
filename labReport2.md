@@ -26,7 +26,7 @@ public void testReversedInPlace1() {
   int[] input1 = {1, 2, 3};
   ArrayExamples.reverseInPlace(input1);
   assertArrayEquals(new int[] {3, 2, 1}, input1);
-  }
+}
 ```
 * Non-Failure-Inducing Input:
 ```
@@ -38,8 +38,8 @@ public void testReverseInPlace() {
 }
 ```
 * Symptoms:
-![testReversedInPlace1](https://user-images.githubusercontent.com/32721916/215294127-9b30d070-6a2f-4dbe-b017-fa529842575a.png)
-![testReverseInPLace](https://user-images.githubusercontent.com/32721916/215294388-5af7c13e-c13c-494a-a343-14ebedf11f99.png)
+* ![testReversedInPlace1](https://user-images.githubusercontent.com/32721916/215294127-9b30d070-6a2f-4dbe-b017-fa529842575a.png)
+* ![testReverseInPLace](https://user-images.githubusercontent.com/32721916/215294388-5af7c13e-c13c-494a-a343-14ebedf11f99.png)
 * The Bug: reverseInPlace would only reverse half the list.
 * Before:
 ```
