@@ -2,7 +2,7 @@
 
 ## Part 1
 Here is the code for StringServer:
-![code](https://user-images.githubusercontent.com/32721916/215285325-430fe6f6-41fa-4397-a812-60a249be6bf8.png)
+![code](https://user-images.githubusercontent.com/32721916/215294628-08c9ce88-df4f-4099-a124-be530779f6e2.png)
 
 1. When adding the word "Hello":
 ![addHello](https://user-images.githubusercontent.com/32721916/215285381-85b0a984-1a18-4bba-8338-42a858e76319.png)
