@@ -5,14 +5,14 @@ Here is the code for StringServer:
 ![code](https://user-images.githubusercontent.com/32721916/215294628-08c9ce88-df4f-4099-a124-be530779f6e2.png)
 
 1. When adding the word "Hello":
-![addHello](https://user-images.githubusercontent.com/32721916/215285381-85b0a984-1a18-4bba-8338-42a858e76319.png)
+* ![addHello](https://user-images.githubusercontent.com/32721916/215285381-85b0a984-1a18-4bba-8338-42a858e76319.png)
 * Calls: ```handleRequest```
 * Relevant Arguments: ```URI url```
 * Values of Relevant fields: ```parameters = [s, Hello]; s = "Hello \n"```
 * Changed Values: From this specific request, a new String array called parameters is created using the query and the value s is changed so that it includes the added string.
 
 2. When adding the word "Goodbye":
-![addGoodbye](https://user-images.githubusercontent.com/32721916/215285963-ff1e2b12-25bd-4aaa-8c4d-ee41f7887238.png)
+* ![addGoodbye](https://user-images.githubusercontent.com/32721916/215285963-ff1e2b12-25bd-4aaa-8c4d-ee41f7887238.png)
 * Calls: ```handleRequest```
 * Relevant Arguments: ```URI url```
 * Values of Relevant fields: ```parameters = [s, Goodbye]; s = "Hello \n Goodbye \n"```
