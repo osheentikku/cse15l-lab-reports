@@ -5,7 +5,8 @@ Here is the code for StringServer:
 * ![code](https://user-images.githubusercontent.com/32721916/215294628-08c9ce88-df4f-4099-a124-be530779f6e2.png)
 
 1. When adding the word "Hello":
-* ![addHello](https://user-images.githubusercontent.com/32721916/215285381-85b0a984-1a18-4bba-8338-42a858e76319.png)
+
+![addHello](https://user-images.githubusercontent.com/32721916/215285381-85b0a984-1a18-4bba-8338-42a858e76319.png)
 * Calls: ```handleRequest```
 * Relevant Arguments: ```URI url```
 * Values of Relevant fields: ```parameters = [s, Hello]; s = "Hello \n"```
@@ -23,18 +24,18 @@ Here is the code for StringServer:
 ```
 @Test
 public void testReversedInPlace1() {
-  int[] input1 = {1, 2, 3};
-  ArrayExamples.reverseInPlace(input1);
-  assertArrayEquals(new int[] {3, 2, 1}, input1);
+    int[] input1 = {1, 2, 3};
+    ArrayExamples.reverseInPlace(input1);
+    assertArrayEquals(new int[] {3, 2, 1}, input1);
 }
 ```
 * Non-Failure-Inducing Input:
 ```
 @Test
 public void testReverseInPlace() {
-  int[] input1 = { 3 };
-  ArrayExamples.reverseInPlace(input1);
-  assertArrayEquals(new int[]{ 3 }, input1);
+    int[] input1 = { 3 };
+    ArrayExamples.reverseInPlace(input1);
+    assertArrayEquals(new int[]{ 3 }, input1);
 }
 ```
 * Symptoms:
@@ -44,19 +45,19 @@ public void testReverseInPlace() {
 * Before:
 ```
 static void reverseInPlace(int[] arr) {
-  for(int i = 0; i < arr.length; i += 1) {
-    arr[i] = arr[arr.length - i - 1];
-  }
+    for(int i = 0; i < arr.length; i += 1) {
+        arr[i] = arr[arr.length - i - 1];
+    }
 }
 ```
 * After:
 ```
 static void reverseInPlace(int[] arr) {
-  for(int i = 0; i < arr.length / 2; i += 1) {
-    int temp = arr[i];
-    arr[i] = arr[arr.length - i - 1];
-    arr[arr.length - 1 - i] = temp;
-  }
+    for(int i = 0; i < arr.length / 2; i += 1) {
+        int temp = arr[i];
+        arr[i] = arr[arr.length - i - 1];
+        arr[arr.length - 1 - i] = temp;
+    }
 }
  ```
 This fix addresses the issue because it swaps corresponding values in the list so that they aren't lost (like before). It also loops for only half the list to prevent values from swapping back.
