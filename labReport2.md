@@ -2,7 +2,8 @@
 
 ## Part 1
 Here is the code for StringServer:
-* ![code](https://user-images.githubusercontent.com/32721916/215294628-08c9ce88-df4f-4099-a124-be530779f6e2.png)
+
+![code](https://user-images.githubusercontent.com/32721916/215294628-08c9ce88-df4f-4099-a124-be530779f6e2.png)
 
 1. When adding the word "Hello":
 
@@ -13,7 +14,8 @@ Here is the code for StringServer:
 * Changed Values: From this specific request, a new String array called parameters is created using the query and the value s is changed so that it includes the added string.
 
 2. When adding the word "Goodbye":
-* ![addGoodbye](https://user-images.githubusercontent.com/32721916/215285963-ff1e2b12-25bd-4aaa-8c4d-ee41f7887238.png)
+
+![addGoodbye](https://user-images.githubusercontent.com/32721916/215285963-ff1e2b12-25bd-4aaa-8c4d-ee41f7887238.png)
 * Calls: ```handleRequest```
 * Relevant Arguments: ```URI url```
 * Values of Relevant fields: ```parameters = [s, Goodbye]; s = "Hello \n Goodbye \n"```
@@ -39,8 +41,10 @@ public void testReverseInPlace() {
 }
 ```
 * Symptoms:
-* ![testReversedInPlace1](https://user-images.githubusercontent.com/32721916/215294127-9b30d070-6a2f-4dbe-b017-fa529842575a.png)
-* ![testReverseInPLace](https://user-images.githubusercontent.com/32721916/215294388-5af7c13e-c13c-494a-a343-14ebedf11f99.png)
+
+![testReversedInPlace1](https://user-images.githubusercontent.com/32721916/215294127-9b30d070-6a2f-4dbe-b017-fa529842575a.png)
+
+![testReverseInPLace](https://user-images.githubusercontent.com/32721916/215294388-5af7c13e-c13c-494a-a343-14ebedf11f99.png)
 * The Bug: reverseInPlace would only reverse half the list.
 * Before:
 ```
