@@ -2,27 +2,31 @@
 
 ## Researching Commands
 Command: ```grep```
-* the following commands were all found [here]https://swcarpentry.github.io/shell-novice/07-find/index.html#:~:text=The%20grep%20command%20searches%20through,)%20we're%20searching%20in.
+* the following commands were all found [here](https://swcarpentry.github.io/shell-novice/07-find/index.html#:~:text=The%20grep%20command%20searches%20through,)%20we're%20searching%20in).
 1. ```grep -w``` 
-```$  grep -w no HistoryFrance.txt
+```
+$  grep -w no HistoryFrance.txt
 at the age of 23, there was no question of a new prime minister
 the sun, Louis was to be outshone by no one. Counselors were wholly
 reforms that would give them greater opportunity; the peasantry was no
 But the middle classes were no longer prepared to tolerate the 
 ```
 The text included words like "nor" which would have shown up with ```grep no HistoryFrance.txt``` but this limits the results to only lines which contain the word "no". This is useful because it lets the user find the specific word they need.
-```$ grep -w men IntroGreek.txt
+```
+$ grep -w men IntroGreek.txt
 The men work in the fields or at their boats, with older men at the
 ```
 This text included both men and women. This is useful if the user only cared about the role of men in Greece.
 
 2. ```grep -n```
-```$ grep -n women IntroGreek.txt
+```
+$ grep -n women IntroGreek.txt
 60: still lead separate lives, with the women in the home, chatting across
 ```
 This provides the exact line the word "women" shows up on. This is helpful if the user needs to know what specific line they should go to for information about women in Greece.
 
-``` $ grep -n island WhatToHawaii.txt
+``` 
+$ grep -n island WhatToHawaii.txt
 8: islands — Oahu, Maui, Kauai, and the Big Island of Hawaii. Some
 11: islands in the chain.
 13: (189-sq km) island of Niihau (nee-ee-how) is called “The Forbidden
@@ -37,7 +41,8 @@ This provides the exact line the word "women" shows up on. This is helpful if th
 Since the word "island" appears many times in the text, it is useful to know specifically which lines it is referenced on.
 
 3. ```grep -v```
-```$ grep -i For WhatToHawaii.txt
+```
+$ grep -i For WhatToHawaii.txt
 (189-sq km) island of Niihau (nee-ee-how) is called “The Forbidden
 ranching operations for Bruce Robinson, owner of the island; the women
 Hawaiians, the island has since served as an Alcatraz for criminals, a
@@ -49,7 +54,8 @@ Midway. For more information, contact Midway-Phoenix (Tel. (888)
 ```
 Since the grep is by default case-sensative, it might skip out on possible on possible lines. This command results in case-insensativity so that you can find all instances of word, regardless of its case.
 
-```$ grep -i This IntroJapan.txt 
+```
+$ grep -i This IntroJapan.txt 
 This is certainly a challenging task, but the rewards for
 doing so are the myriad windows and doors into this fascinating country
 Everywhere you go, you’re likely to find this constant
@@ -66,8 +72,8 @@ criticize, to confirm stereotypes or to note exceptions. This book has
 Similar to the last example, this allows us to find all uses of "this" without working about the case of the word.
 
 4. ```grep -r```
-```$ 
-grep -r vista 
+```
+$ grep -r vista 
 ./IntroDublin.txt:        unexpected distant vistas will remind you that Dublin is by the sea,
 ./IntroMadeira.txt:        rewarded with spectacular vistas can be an exhilarating experience, but
 ./WhereToGreek.txt:        ancient port, now silted up. From here, the vista of the whole town can
@@ -87,7 +93,8 @@ grep -r vista
 ```
 Instead of having to search files manually, this is a useful command as it lets you recursively search through files for the word you're trying to find.
 
-```$ grep -r milk       
+```
+$ grep -r milk       
 ./HandRJamaica.txt:        and ackee, rice and peas, fish in coconut milk, and Escovitch fish. The
 ./IntroIsrael.txt:        search of “the land of milk and honey”; Jesus Christ was born, lived,
 ./WhatToIbiza.txt:        milk flavoured with cinnamon.
