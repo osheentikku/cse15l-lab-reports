@@ -25,7 +25,6 @@ $ grep -n women IntroGreek.txt
 60: still lead separate lives, with the women in the home, chatting across
 ```
 This provides the exact line the word "women" shows up on. This is helpful if the user needs to know what specific line they should go to for information about women in Greece.
-
 ``` 
 $ grep -n island WhatToHawaii.txt
 8: islands — Oahu, Maui, Kauai, and the Big Island of Hawaii. Some
@@ -54,7 +53,6 @@ Wildlife Department as a refuge for the millions of Laysan Albatross
 Midway. For more information, contact Midway-Phoenix (Tel. (888)
 ```
 Since the grep is by default case-sensative, it might skip out on possible on possible lines. This command results in case-insensativity so that you can find all instances of word, regardless of its case.
-
 ```
 $ grep -i This IntroJapan.txt 
 This is certainly a challenging task, but the rewards for
@@ -93,7 +91,6 @@ $ grep -r vista
 ./IntroLakeDistrict.txt:        combined, create the most pleasing and relaxing vistas
 ```
 Instead of having to search files manually, this is a useful command as it lets you recursively search through files for the word you're trying to find.
-
 ```
 $ grep -r milk       
 ./HandRJamaica.txt:        and ackee, rice and peas, fish in coconut milk, and Escovitch fish. The
