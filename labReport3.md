@@ -2,7 +2,7 @@
 
 ## Researching Commands
 Command: ```grep```
-* the following commands were all found [here](https://swcarpentry.github.io/shell-novice/07-find/index.html#:~:text=The%20grep%20command%20searches%20through,)%20we're%20searching%20in).
+* the following commands were all found [here](https://swcarpentry.github.io/shell-novice/07-find/index.html#:~:text=The%20grep%20command%20searches%20through,%20we're%20searching%20in).
 1. ```grep -w``` 
 ```
 $  grep -w no HistoryFrance.txt
