@@ -40,7 +40,7 @@ $ grep -n island WhatToHawaii.txt
 ```
 Since the word "island" appears many times in the text, it is useful to know specifically which lines it is referenced on.
 
-3. ```grep -v```
+3. ```grep -i```
 ```
 $ grep -i For WhatToHawaii.txt
 (189-sq km) island of Niihau (nee-ee-how) is called “The Forbidden
@@ -68,29 +68,15 @@ Over this amazing cornucopia presides Emperor Akihito. His
 from the daily life of their increasingly beleaguered subjects. This is
 criticize, to confirm stereotypes or to note exceptions. This book has
 ```
-Similar to the last example, this allows us to find all uses of "this" without working about the case of the word.
+Similar to the last example, this allows us to find all uses of "this" without worrying about the case of the word.
 
 4. ```grep -r```
 ```
-$ grep -r vista 
-./IntroDublin.txt:        unexpected distant vistas will remind you that Dublin is by the sea,
-./IntroMadeira.txt:        rewarded with spectacular vistas can be an exhilarating experience, but
-./WhereToGreek.txt:        ancient port, now silted up. From here, the vista of the whole town can
-./WhereToLakeDistrict.txt:        Harrison Stickle and Crinkle Crags — produce some of the finest vistas
-./WhereToLakeDistrict.txt:        View,” a lookout that offers a panoramic vista of Derwent Water with
-./WhereToIsrael.txt:        rolling vistas of sand dunes, but is instead a rocky wasteland of
-./WhereToFrance.txt:        vista was originally planned for Napo­leon to see from his bedroom in
-./WhereToFrance.txt:        The little port town of Cancale — with a wide vista across
-./WhereToFrance.txt:        Saint-Philippe bastion and the Tour Bidouane opening up a vista along
-./WhereToMadeira.txt:        There are beautiful vistas, secluded villages, and a range of
-./WhereToIbiza.txt:        ends, and unexpected vistas, a map isn’t really necessary. The most
-./WhereToIbiza.txt:        farms, wild flowers, and sweeping sea vistas.
-./WhereToJerusalem.txt:        sites and vistas on the Mount of Olives and in the Kidron Valley; and,
-./WhereToJerusalem.txt:        Hotel, with its spectacular vistas, or just wait while you have your
-./WhereToJerusalem.txt:        crowned by the conical roof of the Dormition Abbey. This sweeping vista
-./IntroLakeDistrict.txt:        combined, create the most pleasing and relaxing vistas
+$ grep -r Lucayans
+./travel_guides/berlitz2/Bahamas-History.txt:Centuries before the arrival of Columbus, a peaceful Amerindian people who called themselves the Luccucairi had settled in the Bahamas. Originally from South America, they had traveled up through the Caribbean islands, surviving by cultivating modest crops and from what they caught from sea and shore. Nothing in the experience of these gentle people could have prepared them for the arrival of the Pinta, the Niña, and the Santa Maria at San Salvador on 12 October 1492. Columbus believed that he had reached the East Indies and mistakenly called these people Indians. We know them today as the Lucayans. Columbus claimed the island and others in the Bahamas for his royal Spanish patrons, but not finding the gold and other riches he was seeking, he stayed for only two weeks before sailing towards Cuba.
+./travel_guides/berlitz2/Bahamas-History.txt:The Spaniards never bothered to settle in the Bahamas, but the number of shipwrecks attest that their galleons frequently passed through the archipelago en route to and from the Caribbean, Florida, Bermuda, and their home ports. On Eleuthera the explorers dug a fresh-water well — at a spot now known as “Spanish Wells” — which was used to replenish the supplies of water on their ships before they began the long journey back to Europe with their cargoes of South American gold. As for the Lucayans, within 25 years all of them, perhaps some 30,000 people, were removed from the Bahamas to work — and die — in Spanish gold mines and on farms and pearl fisheries on Hispaniola (Haiti), Cuba, and elsewhere in the Caribbean.
 ```
-Instead of having to search files manually, this is a useful command as it lets you recursively search through files for the word you're trying to find.
+Instead of having to search multiple directories and files manually, this is a useful command as it lets you recursively search through files for the word you're trying to find.
 ```
 $ grep -r milk       
 ./HandRJamaica.txt:        and ackee, rice and peas, fish in coconut milk, and Escovitch fish. The
@@ -110,4 +96,4 @@ $ grep -r milk
 ./WhatToIstanbul.txt:        combination of rice, milk, sugar, and chicken breast). A more unusual
 ./WhatToIstanbul.txt:        its nickname, aslan sütü — lion’s milk). Turkish-made beer is also a
 ```
-Similar to the previous example, this lets you quickly search for the word "milk" instead of doing it manually.
+Similar to the previous example, this lets you quickly search for the word "milk" instead of doing it manually. This one however works through a single directory instead of multiple.
