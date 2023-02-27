@@ -2,6 +2,7 @@
 
 ## Tasks
 1. Log into ieng6
+
 ```
 ssh cs15lwi23afz@ieng6.ucsd.edu <enter>
 ```
@@ -11,6 +12,7 @@ ssh cs15lwi23afz@ieng6.ucsd.edu <enter>
 I ran the command to login to ieng6 but didnt have to enter my password because I had set up a SSH key.
   
 2. Clone your fork of the repository from your Github account
+
 ```
 git clone <ctrl+c> <ctrl+v> git@github.com:osheentikku/lab7.git
 ```
@@ -20,6 +22,7 @@ git clone <ctrl+c> <ctrl+v> git@github.com:osheentikku/lab7.git
 I ran the command to clone the lab 7 repo but I used control-c/v to paste the link in.
    
 3. Run the tests, demonstrating that they fail
+
 ```
 cd l<tab>ab7/
 <ctrl+c><ctrl+v> javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java <enter>
@@ -31,6 +34,7 @@ cd l<tab>ab7/
 I used tab to autocomplete the directory name for cd and the file name when running the test case. I used control-c/v to paste the code to run the java test cases because it was faster than typing it all out. 
   
 4. Edit the code file to fix the failing test
+
 ```
 nano L<tab>istExamples.java <enter>
 <ctrl+w><scroll><up><up><up><up><up><up><up><up><up><up><up><backspace> 2
@@ -43,6 +47,7 @@ nano L<tab>istExamples.java <enter>
 I used the nano command so I could edit the file from the terminal and used tab to autocomplete the file name. Once I was within the editor, I scrolled down to get to the line I needed to edit and then used the arrow keys to get to the exact spot. Once I was done, I saved and exited the editor using control+o/x.
   
 5. Run the tests, demonstrating that they now succeed
+
 ```
 <up><up><enter>
 <up><up><up><enter>
@@ -52,7 +57,8 @@ I used the nano command so I could edit the file from the terminal and used tab 
 
 I used the up arrow keys to access the javac and java commands for ListExamplesTests since I had already run them once and they were in my command history.
   
-6. Commit and push the resulting change to your Github account (you can pick any commit message!)
+6. Commit and push the resulting change to your Github account
+
 ```
 git add L<tab>istExamples.java
 git commit -m "Update"
