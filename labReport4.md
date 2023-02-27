@@ -25,8 +25,8 @@ I ran the command to clone the lab 7 repo but I used control-c/v to paste the li
 
 ```
 cd l<tab>ab7/
-<ctrl+c><ctrl+v> javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java <enter>
-<ctrl+c><ctrl+v> java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore L<tab>istExamplesT<tab>ests <enter>
+<ctrl+c><ctrl+v><enter>
+<ctrl+c><ctrl+v> ListExamplesTests <enter>
 ```
 
 <img width="1131" alt="Screenshot 2023-02-27 at 12 17 25 PM" src="https://user-images.githubusercontent.com/32721916/221674912-19acb333-174b-4246-b227-6e85519b52f9.png">
